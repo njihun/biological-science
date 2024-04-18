@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생명과학2 수행평가용</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+
+        #container {
+            border: 2px solid black;
+            width: 50vh;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            align-items: center;
+        }
+
+        #result {
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #container>div {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 0;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+
+        td {
+            width: calc(60vw / 6);
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div style="background-color: aqua; line-height: calc(40vh * 50 / 100);">
+            문제 자동 생성기
+        </div>
+        <div style="line-height: calc(40vh * 50 / 100);">
+            <button onclick="createQuestion();" style="width: 50%; height: 8vh;">생성하기</button>
+        </div>
+    </div>
+    <div id="button"></div>
+    <div id="result"></div>
+    <script src="./science.js"></script>
+</body>
+
+</html>
